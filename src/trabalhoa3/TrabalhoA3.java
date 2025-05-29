@@ -1,4 +1,4 @@
-package trabalhoa3;
+package trabalhoa3; a
 import java.util.Scanner;
 //@author Thalys
 public class TrabalhoA3 {
