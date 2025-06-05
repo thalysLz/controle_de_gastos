@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class funcao {
 
     Scanner entrada = new Scanner(System.in);
+    
     //função de planejamento financeiro
     public void planejamentoFinanceiro(double salario) {
         //variaveis.
@@ -34,6 +35,16 @@ public class funcao {
         System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
         System.out.print("Aperte enter para continuar.");
         Continuar = entrada.nextLine();
+    }
+        public void salvarTransacaoEmArquivo(String descricao, double valor, boolean isGanho, int mes, int ano) {
+    try {
+        java.io.FileWriter fw = new java.io.FileWriter("transacoes.txt", true); // true = modo append
+        java.io.PrintWriter pw = new java.io.PrintWriter(fw);
+        pw.println(ano + ";" + mes + ";" + isGanho + ";" + descricao + ";" + valor);
+        pw.close();
+    } catch (Exception e) {
+        System.out.println("Erro ao salvar a transação: " + e.getMessage());
+    }
     }
     
     //função de registro de movimentações.
@@ -197,16 +208,6 @@ public class funcao {
                 System.out.println("Opção inválida, tente novamente.");
         }
     } while (opcao != 0);
-}
-    public void salvarTransacaoEmArquivo(String descricao, double valor, boolean isGanho, int mes, int ano) {
-    try {
-        java.io.FileWriter fw = new java.io.FileWriter("transacoes.txt", true); // true = modo append
-        java.io.PrintWriter pw = new java.io.PrintWriter(fw);
-        pw.println(ano + ";" + mes + ";" + isGanho + ";" + descricao + ";" + valor);
-        pw.close();
-    } catch (Exception e) {
-        System.out.println("Erro ao salvar a transação: " + e.getMessage());
-    }
 }
     
     // Classes internas
