@@ -68,6 +68,7 @@ public class TrabalhoA3 {
                         break;
                     default:
                         System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+                        System.out.println(" ");
                         System.out.println("Opção inválida. Digite um número entre as opções do menu.");
                 }
             } else {
