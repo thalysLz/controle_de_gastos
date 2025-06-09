@@ -299,6 +299,7 @@ public void menuTransacoes() {
         }
     } while (opcao != 0);
 }
+
     // Classes internas
     class Transacao {
         private String descricao;
@@ -322,6 +323,7 @@ public void menuTransacoes() {
         public int getAno() { return ano; }
     }
 
+    //extratofinanceiro
     class ExtratoFinanceiro {
         private List<Transacao> transacoes = new ArrayList<>();
 
