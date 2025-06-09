@@ -101,7 +101,9 @@ public class TrabalhoA3 {
                         System.out.println(" ");
                         System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
                         System.out.println(" ");
-                        System.out.println("\nEncerrando... Até a próxima, " + nome + "!");
+                        System.out.println("Encerrando... Até a próxima, " + nome + "!");
+                        System.out.println(" ");
+                        System.out.println("<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
                         break;
                         
                     //tratamento de exceções.
@@ -120,7 +122,6 @@ public class TrabalhoA3 {
                 System.out.println("Entrada inválida! Digite apenas números.");
                 System.out.println(" ");
                 entrada.nextLine();
-                continue;
             }
 
         } while (escolha != 0);
